@@ -1052,6 +1052,11 @@ div.mq-select-cascader {
             width: 120px;
             padding: 0;
             float: left;
+            &.selected {
+              &::after {
+                display: none;
+              }
+            }
         }
     }
 }
@@ -1073,6 +1078,11 @@ div.mq-select-group {
                     float: left;
                     display: flex;
                     padding: 0 5px;
+                    &.selected {
+                      &::after {
+                        display: none;
+                      }
+                    }
                 }
             }
         }
@@ -1084,6 +1094,11 @@ div.mq-select {
             width: 140px;
             float: left;
             padding: 0;
+            &.selected {
+              &::after {
+                display: none;
+              }
+            }
         }
     }
 }
